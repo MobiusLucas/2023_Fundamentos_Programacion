@@ -1,0 +1,12 @@
+/// NOMENCLATURA NOMBRES : AÑO_MES_DIA_***
+-Disciplina de Nomenclatura
+
+-Commit para realizar cambios a rama.
+-Repositorios en GitHub Desktop.
+
+-CLONAR REPOSITORIO CON URL.
+
+-BRANCH DEL REPOSITORIO DE PROYECTO PARA TRABAJAR INDIVIDUALMENTE EN ALGO.
+-FORK SOLO SE USARIA EN CASO DE NO TENER ACCESO AL REPOSITORIO PARA GENERAR UN BRANCH.
+
+-Generar Pull Request para pasar el codigo de branch hacia el main.
