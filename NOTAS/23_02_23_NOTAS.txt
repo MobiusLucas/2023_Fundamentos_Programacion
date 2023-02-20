@@ -1,0 +1,25 @@
+https://www.programarya.com/Cursos/C++
+
+
+INVESTIGACION 1:
+1-Sistema de Numeracion.
+2-Cambios de Base.
+3-Variables.
+4-Jerarquia de Operaciones.
+5-Operaciones de Conjuntos.
+
+
+1.- Son sistemas numéricos son conjuntos de símbolos, su representación está dada en
+base, 2, 8 y 16 permitiendo su conversión entre sistemas binario, octal, hexadecimal.
+
+
+3.- Cambiar en funcion a algun motivo (determinado o indeterminado).
+4.- Como te lo imaginas.
+    a=1 b=-2 c=3
+ Y=(a+c^3)/b+5*c+(c+(4*b-7)^2)
+   (1+3^3)/-2+5*3+(3+(4*-2-7)^2)                  
+   -------            ------              
+   (28)/-2+5*3+(3+(-15)^2)
+    ----------     -------
+    -14+15+(3+225)
+     1+228 = 229                  
