@@ -2,14 +2,16 @@
 //
 
 #include <iostream>
-
+#include <math.h>
 int main()
 {
-    int dato1;
-    int dato2;
-    int dato3;
+    float dato1;
+    float dato2;
+    float dato3;
     int opcion;
-    std::cout << "Que opcion quieres realizar?: \n 0.Multiplicacion \n 1.Suma \n 2.Division \n 3.Valor Absoluto \n 4.Valor mayor o menor \n" ;
+    float cuadrado = 2;
+
+    std::cout << "Que opcion quieres realizar?: \n 0.Multiplicacion \n 1.Suma \n 2.Division \n 3.Resta \n 4.Al Cuadrado \n 5.Valor Absoluto \n 6.Valor Mayor o Menor \n";
     std::cout << "Para escoger algo solo ingresa el numero de la opcion y presiona enter\n";
     std::cin >> opcion;
 
@@ -44,6 +46,22 @@ int main()
         std::cout << "El resultado es " << dato3;
         break;
     case 3:
+        std::cout << "Estas en Resta\n";
+        std::cout << " Ingresa el primer dato \n";
+        std::cin >> dato1;
+        std::cout << " Ingresa el segundo dato \n";
+        std::cin >> dato2;
+        dato3 = dato1 - dato2;
+        std::cout << "El resultado es " << dato3;
+        break;
+    case 4:
+        std::cout << "Estas en Cuadrado \n";
+        std::cout << " Ingresa el numero que quieres pasar a cuadrado \n";
+        std::cin >> dato1;
+        dato3 = pow(dato1, cuadrado);
+        std::cout << "El resultado es " << dato3;
+        break;
+    case 5:
         std::cout << "Estas en Valor Absoluto \n";
         std::cout << " Ingresa el dato \n";
         std::cin >> dato1;
@@ -56,7 +74,7 @@ int main()
             std::cout << "el valor absoluto es " << dato3;
         }
         break;
-    case 4:
+    case 6:
         std::cout << "Estas en Valor mayor o menor \n";
         std::cout << " Ingresa el primer dato \n";
         std::cin >> dato1;
@@ -65,7 +83,7 @@ int main()
         if (dato1 == dato2) {
             std::cout << "Los valores son identicos \n";
         }
-         else {
+        else {
             if (dato1 > dato2) {
                 std::cout << dato1 << " Es mayor que " << dato2 << "\n";
                 std::cout << dato2 << " Es menor que " << dato1 << "\n";
@@ -74,7 +92,7 @@ int main()
                 std::cout << dato2 << " Es mayor que  " << dato1 << "\n";
                 std::cout << dato1 << " Es menor que  " << dato2 << "\n";
             }
-         }
+        }
         break;
     default:
         std::cout << "ingresaste algo que no tengo contemplado..... \n";
