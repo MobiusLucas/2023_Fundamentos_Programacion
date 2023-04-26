@@ -10,6 +10,9 @@ int main()
     float dato3;
     int opcion;
     float cuadrado = 2;
+    bool Continuar = true;
+    while (Continuar)
+    {
 
     std::cout << "Que opcion quieres realizar?: \n 0.Multiplicacion \n 1.Suma \n 2.Division \n 3.Resta \n 4.Al Cuadrado \n 5.Valor Absoluto \n 6.Valor Mayor o Menor \n";
     std::cout << "Para escoger algo solo ingresa el numero de la opcion y presiona enter\n";
@@ -25,7 +28,7 @@ int main()
         std::cout << "Ingresa el segundo dato \n";
         std::cin >> dato2;
         dato3 = dato1 * dato2;
-        std::cout << "El resultado es " << dato3;
+        std::cout << "El resultado es " << dato3 << " \n";
         break;
     case 1:
         std::cout << "Estas en suma \n";
@@ -34,7 +37,7 @@ int main()
         std::cout << "Ingresa el segundo dato \n";
         std::cin >> dato2;
         dato3 = dato1 + dato2;
-        std::cout << "El resultado es " << dato3;
+        std::cout << "El resultado es " << dato3 << " \n";
         break;
     case 2:
         std::cout << "Estas en division \n";
@@ -43,7 +46,7 @@ int main()
         std::cout << "Ingresa el segundo dato \n";
         std::cin >> dato2;
         dato3 = dato1 / dato2;
-        std::cout << "El resultado es " << dato3;
+        std::cout << "El resultado es " << dato3 << " \n";
         break;
     case 3:
         std::cout << "Estas en Resta\n";
@@ -52,14 +55,14 @@ int main()
         std::cout << " Ingresa el segundo dato \n";
         std::cin >> dato2;
         dato3 = dato1 - dato2;
-        std::cout << "El resultado es " << dato3;
+        std::cout << "El resultado es " << dato3 << " \n";
         break;
     case 4:
         std::cout << "Estas en Cuadrado \n";
         std::cout << " Ingresa el numero que quieres pasar a cuadrado \n";
         std::cin >> dato1;
         dato3 = pow(dato1, cuadrado);
-        std::cout << "El resultado es " << dato3;
+        std::cout << "El resultado es " << dato3 << " \n";
         break;
     case 5:
         std::cout << "Estas en Valor Absoluto \n";
@@ -67,11 +70,11 @@ int main()
         std::cin >> dato1;
         if (dato1 <= 0) {
             dato3 = dato1 * -1;
-            std::cout << "el valor absoluto es " << dato3;
+            std::cout << "el valor absoluto es " << dato3 << " \n";
         }
         else {
             dato3 = dato1;
-            std::cout << "el valor absoluto es " << dato3;
+            std::cout << "el valor absoluto es " << dato3 << " \n";
         }
         break;
     case 6:
@@ -98,6 +101,21 @@ int main()
         std::cout << "ingresaste algo que no tengo contemplado..... \n";
         break;
     }
+    system("pause");
+    system("cls");
+    std::string aux;
+    
+    std::cout << "Deseas continuar? Si o No \n";
+    std::cin >> aux;
 
+    if (aux == "si" || aux == "Si" || aux == "SI")
+    {
+        Continuar = true;
+    }
+    else
+    {
+        Continuar = false;
+    }
+    } 
 }
 
